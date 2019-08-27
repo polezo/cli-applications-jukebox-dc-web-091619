@@ -46,15 +46,15 @@ def run(songs)
   command = gets.chomp
   while true do
   case command
+  when "exit"
+  exit_jukebox()
+  break
   when "list"
     list(songs)
   when "play" 
     play(songs)
   when "help"
     help()
-  when "exit"
-    exit_jukebox()
-    break
   end
 end
 end
